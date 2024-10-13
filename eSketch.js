@@ -27,7 +27,15 @@ const container = document.querySelector('.container');
 //     container.appendChild(createDiv);
 // }
 
+createGrid(16);
 
+button.addEventListener('click', function() {
+    if(inputField.value <= 100) {
+        createGrid(inputField.value)
+    } else {
+        alert('Grid Maximum Value is 100!');
+    }
+});
 
 
 //Create function to made custom grid
