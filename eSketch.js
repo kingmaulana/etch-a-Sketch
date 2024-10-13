@@ -28,3 +28,21 @@ const container = document.querySelector('.container');
 // }
 
 
+
+
+//Create function to made custom grid
+function createGrid(grid) {
+    // grid = inputField.value;
+    // inputField.value = '';
+
+
+    for(let i = 0; i < (grid * grid); i++) {
+        const createDiv = document.createElement('div');
+        createDiv.classList.add('boxs');
+        container.appendChild(createDiv);
+        createDiv.style.width = (498 / grid) + 'px';
+        createDiv.style.height = (498 / grid) + 'px';
+    }
+
+
+}
