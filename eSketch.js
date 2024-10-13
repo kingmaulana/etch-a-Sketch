@@ -34,7 +34,10 @@ const container = document.querySelector('.container');
 function createGrid(grid) {
     // grid = inputField.value;
     // inputField.value = '';
-
+    const boxss = document.querySelectorAll('.boxs');
+    boxss.forEach(function(box){
+        box.remove();
+    });
 
     for(let i = 0; i < (grid * grid); i++) {
         const createDiv = document.createElement('div');
